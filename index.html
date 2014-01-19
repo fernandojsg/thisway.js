@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+		<title>thisway.js by stravaganza</title>
+
+		<meta property="og:type" content="video"/>
+		<link rel="image_src" href="http://kile.stravaganza.org/lab/thiswayjs/files/shot.jpg"/>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="thisway.js by stravaganza"/>
+		<meta property="og:description" content="Remake of the Stravaganza's demo 'this way' done in webgl"/>
+		<meta property="og:image" content="http://kile.stravaganza.org/lab/thiswayjs/files/shot.jpg"/>
+		<meta property="og:image:height" content="800" />
+		<meta property="og:image:width" content="577" />
+		<meta property="og:url" content="http://kile.stravaganza.org/lab/thiswayjs/"/>
+		<meta property="og:title" content="thisway.js: a webgl demo remake by stravaganza"/>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="en" />
+
+	    <!-- Mobile Specific Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		
+	</head>
+	<body onload="load()">
+
+		<script src="js/Frame.js"></script>
+		<script src="js/libs/raf.min.js"></script>
+		<!-- <script src="js/libs/three.min.js"></script> -->
+		<!-- <script src="js/libs/three.js"></script> -->
+		<script src="js/libs/three.min.js"></script>
+		
+
+		<script src="js/demoscript.js"></script>
+		<script src="js/resources.js"></script>
+		
+		<script src="js/shaders/CopyShader.js"></script>
+		<script src="js/shaders/BlendShader.js"></script>
+		<script src="js/shaders/RadialBlurShader.js"></script>
+		<script src="js/shaders/BasicShader.js"></script>
+
+		<script src="js/libs/EffectComposer.js"></script>
+		<script src="js/libs/RenderPass.js"></script>
+		<script src="js/libs/ShaderPass.js"></script>
+		<script src="js/libs/SavePass.js"></script>
+
+		<script src="js/modules/WebGLRendererModule.js"></script>
+		<script src="js/engine/particlesystem.js"></script>
+		<script src="js/engine/randomizer.js"></script>
+		<script src="js/engine/resourcemanager.js"></script>
+		<script src="js/engine/loader.js"></script>
+
+		<script src="js/modules/FXFlash.js"></script>
+
+		<script src="js/modules/ClearModule.js"></script>
+		<script src="js/modules/FXSineBackground.js"></script>
+		<script src="js/modules/FadeInModule.js"></script>
+		<script src="js/modules/FadeOutModule.js"></script>
+		<script src="js/modules/FXTelevisionNoise.js"></script>
+		<script src="js/modules/FXBackground.js"></script>
+		<script src="js/modules/FXBackgroundGrid.js"></script>
+
+		<script src="js/modules/FXQuadsTransition.js"></script>
+		<script src="js/modules/FXWaveDistortion.js"></script>
+		<script src="js/modules/FXWavesBackground.js"></script>
+		<script src="js/modules/FXFinalTV.js"></script>
+		
+		<script src="js/modules/FXSpikeBallScene.js"></script>
+		<script src="js/modules/FXHairyObject.js"></script>		
+		<script src="js/modules/FXCredits.js"></script>
+		<script src="js/modules/FXCircles.js"></script>
+		<script src="js/modules/FXWaterScene.js"></script>
+		<script src="js/modules/FXParticleSteam.js"></script>
+		
+		<script src="js/modules/FXJellyScene.js"></script>
+
+		<script src="js/modules/FXRotatingArrow.js"></script>
+		<script src="js/modules/FXKNot.js"></script>
+		<script src="js/modules/FXCubesRoom.js"></script>
+		<script src="js/modules/FXDisintegrateImage.js"></script>
+		<script src="js/modules/FXArrows.js"></script>
+		<script src="js/modules/FXPulsatingImage.js"></script>
+		<script src="js/modules/FXFade.js"></script>
+		<script src="js/modules/FXText2D.js"></script>
+		<script src="js/modules/FXRadialBlur.js"></script>
+		<script src="js/modules/FXCubesBlur.js"></script>		
+		<script src="js/modules/FXKnotBackground.js"></script>
+		<script src="js/modules/FXThisWayGlow.js"></script>
+		<script src="js/modules/FXAlphaFunc.js"></script>
+		<script src="js/libs/ColladaLoader.js"></script>
+
+		<script src="files/fonts/helvetiker_regular.typeface.js"></script>
+		<script src="files/fonts/arial_black.typeface.js"></script>
+		
+
+<script type="x-shader/x-vertex" id="vertexShaderSphereWaterScene">
+	varying vec3 vNormal;
+	varying vec3 vEyeView;
+	varying vec2 vUv;
+	void main()
+	{
+		vNormal = normalize( normalMatrix * normal );
+		vec4 positionView = modelViewMatrix * vec4( position, 1.0 );
+		vEyeView = normalize(-positionView.xyz);
+    	gl_Position = projectionMatrix * positionView;
+		vUv = uv;    	
+	} 
+</script>
+
+<script type="x-shader/x-vertex" id="fragmentShaderSphereWaterScene">
+	varying vec3 vNormal;
+	varying vec3 vEyeView;
+	varying vec2 vUv;		
+	uniform sampler2D tMaterialCoat;
+
+	vec2 SphereMap(const in vec3 ecPosition3, const in vec3 normal)
+	{
+		float m;
+		vec3 r, u;
+		u = normalize(ecPosition3);
+		r = reflect(u, normal);
+		r.z += 1.0;
+		m = 0.5 * inversesqrt( dot(r,r) );
+		return r.xy * m + 0.5;
+	}	
+	void main()
+	{
+		vec3 finalNormal = normalize(vNormal);
+		vec3 base = texture2D(tMaterialCoat, SphereMap(-vEyeView, finalNormal)).rgb;
+		float angle = 1.0 - dot (vEyeView, vNormal);		
+		gl_FragColor = vec4(base, angle + 0.3);
+	} 
+</script>
+
+
+
+<script type="x-shader/x-vertex" id="vertexShader">
+	varying vec2 vUv;
+
+    void main() {
+        vUv = uv;
+
+        gl_Position =   projectionMatrix * 
+                        modelViewMatrix * 
+                        vec4(position,1.0);
+    }
+</script>
+
+
+
+
+<script type="x-shader/x-fragment" id="fragmentShaderJelly">
+	precision mediump float;
+
+	uniform sampler2D texture1;
+	uniform sampler2D texture2;
+
+	uniform float time;
+	uniform vec2 resolution;
+    varying vec2 vUv;
+
+    #define MAX_ITER 12
+	void main(void)
+	{	
+		vec2 p = vUv*8.0- vec2(20.0);
+		vec2 i = p;
+		float c = 1.0;
+		float inten = .020;
+
+		for (int n = 0; n < MAX_ITER; n++) 
+		{
+			float t = time * (1.0 - (3.0 / float(n+1)));
+			i = p + vec2(cos(t - i.x) + sin(t + i.y), sin(t - i.y) + cos(t + i.x));
+			c += 1.0/length(vec2(p.x / (sin(i.x+t)/inten),p.y / (cos(i.y+t)/inten)));
+		}
+		c /= float(MAX_ITER);
+		c = 1.5-sqrt(c);
+		
+		gl_FragColor = vec4(vec3(c*c*c*c), 1.0) + vec4(0.2, 0.52, 0.18, 1.0);
+	}
+</script>
+
+<script type="x-shader/x-vertex" id="vertexShaderBlur">
+
+	varying vec2 vUv;
+
+    void main() {
+    	vUv=uv;
+        gl_Position =   projectionMatrix * 
+                        modelViewMatrix * 
+                        vec4(position,1.0);
+		gl_Position = sign( gl_Position );
+    }
+
+</script>
+
+
+<script type="x-shader/x-fragment" id="fragmentShaderBlur">
+precision mediump float;
+
+uniform sampler2D tex;
+varying vec2 vUv;
+
+// texture coordinates passed from the vertex shader
+//varying vec2 uv;
+
+// some , tweak for best look
+/*
+const float sampleDist = 0.3;
+const float sampleStrength = 3.2; 
+const int numSamples=10;
+*/
+
+const float sampleDist = 0.3;
+const float sampleStrength = 3.2; 
+const int numSamples=10;
+
+
+void main()
+{
+	vec2 uv=vUv;
+
+	float samples[10];
+	samples[0]=-0.08;
+	samples[1]=-0.05;
+	samples[2]=-0.03;
+	samples[3]=-0.02;
+	samples[4]=-0.01;
+	samples[5]=0.01;
+	samples[6]=0.02;
+	samples[7]=0.03;
+	samples[8]=0.05;
+	samples[9]=0.08;
+
+	// some sample positions
+
+	// 0.5,0.5 is the center of the screen
+	// so substracting uv from it will result in
+	// a vector pointing to the middle of the screen
+	vec2 dir = 0.5-uv; 
+
+	// calculate the distance to the center of the screen
+	float dist = sqrt(dir.x*dir.x + dir.y*dir.y); 
+
+	// normalize the direction (reuse the distance)
+	dir = dir/dist; 
+
+	// this is the original colour of this fragment
+	// using only this would result in a nonblurred version
+	vec4 color = texture2D(tex,uv); 
+
+	vec4 sum = color;
+
+	// take 10 additional blur samples in the direction towards
+	// the center of the screen
+	for (int i = 0; i < numSamples; i++)
+	{
+		sum += texture2D( tex, uv + dir * samples[i] * sampleDist );
+	}
+
+	// we have taken eleven samples
+	sum *= 1.0/float(numSamples+1);
+
+	// weighten the blur effect with the distance to the
+	// center of the screen ( further out is blurred more)
+	float t = dist * sampleStrength;
+	t = clamp( t ,0.0,1.0); //0 &lt;= t &lt;= 1
+
+	//Blend the original color with the averaged pixels
+	gl_FragColor = mix( color, sum, t );
+	//gl_FragColor=vec4(1.0,1.0,0.0,1.0);
+}
+
+</script>
+
+
+
+<script type="x-shader/x-vertex" id="vertexShaderMirror">
+	varying vec2 vUv;
+	uniform vec2 scale;
+	uniform mat4 matrixScale;
+
+    void main() {
+        vUv = uv;
+        gl_Position =   projectionMatrix *
+                        modelViewMatrix *
+        				matrixScale * 
+                        vec4(position,1.0);
+    }
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShaderMirror">
+	precision mediump float;
+
+	uniform sampler2D diffuse;
+    varying vec2 vUv;
+
+    void main() {
+
+    	vec4 col=texture2D(diffuse, vUv);
+//    	col.r=1.0;
+    	col.a=0.5;
+
+   		gl_FragColor = col;
+
+    }
+
+</script>
+
+
+<script type="x-shader/x-fragment" id="fragmentShaderScroll">
+	precision mediump float;
+
+	uniform sampler2D background;
+	uniform sampler2D scroll;
+
+	uniform float time;
+    varying vec2 vUv;
+
+    void main() {
+    	vec2 uv=vUv+time;
+    	uv*=2.0;
+    	vec4 colA=texture2D(background, vUv);
+    	vec4 colB=texture2D(scroll, uv);
+   		gl_FragColor =colA+0.6*(colB-1.0)*colB.a;
+    }
+
+</script>
+
+
+
+
+
+
+
+<script type="x-shader/x-fragment" id="fragmentShaderWavesJelly">
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+varying vec2 vUv;
+uniform vec2 mouse;
+uniform float time;
+
+#define PI 3.1416
+
+void main(void)
+{
+	vec2 p = vUv;
+	p.x += 0.58;
+	p.y -= 0.61;
+	vec2 center = vec2(1., 1);
+	float d = distance(p, center);
+	
+		
+	//bluish tint from top left
+	vec3 color = vec3(1.0-d*0.75) * vec3(0.3, 0.3, 0.3);
+	
+	//add some green near centre
+	color += (1.0-distance(p, vec2(1.0, 0.0))*1.)*0.5 * vec3(0.5, 0.5, 0.5);
+	
+	vec3 lightColor = vec3(0.6, 0.6, 0.6);
+	
+	
+	//will be better as uniforms
+	for (int i=0; i<3; i++) {
+		//direction of light
+		//float zr = sin(time*0.15*float(i))*0.5 - PI/3.0;
+		float zr = sin(time*0.5*float(i))*0.5 - PI/3.0;
+		vec3 dir = vec3(cos(zr), sin(zr), 0.0);
+		
+		p.x -= 0.02;
+		
+		//normalized spotlight vector
+		vec3 SpotDir = normalize(dir);
+		
+		//
+		vec3 attenuation = vec3(0.5, 7.0, 10.0);
+		float shadow = 1.0 / (attenuation.x + (attenuation.y*d) + (attenuation.z*d*d));
+
+		vec3 pos = vec3(p, 0.0);
+		vec3 delta = normalize(pos - vec3(center, 0.0));
+		
+		float cosOuterCone = cos(radians(1.0));
+		float cosInnerCone = cos(radians(15.0 + float(i*2)));
+		float cosDirection = dot(delta, SpotDir);
+		
+		//light...
+		color += smoothstep(cosInnerCone, cosOuterCone, cosDirection) * shadow * lightColor;
+	}
+
+	color += sin(time*0.5)*0.05;
+	gl_FragColor = vec4(vec3(color), 1.0);
+		
+}
+
+</script>
+
+
+
+<script type="x-shader/x-fragment" id="fragmentShaderTV">
+	precision mediump float;
+
+	varying vec2 surfacePosition;
+	uniform float time;
+	uniform vec2 resolution;
+
+	float hash( float n )
+	{
+	    return fract( sin(n)* 43758.5453123 );
+	}
+
+	float noise1( float x )
+	{
+	    float p = floor(x);
+	    float f = fract(x);
+
+	    f = f*f*(3.0-2.0*f);
+
+	    return mix( hash(p+0.0), hash(p+1.0), f );
+	}
+
+	float fbm( float p )
+	{
+	    float f = 0.0;
+
+	    f += 0.5000*noise1( p ); p = p*2.02;
+	    f += 0.2500*noise1( p ); p = p*2.03;
+	    f += 0.1250*noise1( p ); p = p*2.01;
+	    f += 0.0625*noise1( p );
+
+	    return f/0.9375;
+	}
+
+	// war of the ants, i vote for the black ones
+	float random(float p) {
+	  return fract(sin(fract(tan(p)))*12345.);
+	}
+
+	float noise(vec2 p) {
+	  return random(mod(asin(-2.0+time)/(p.x*p.x)+p.y, fract(acos(-1.0+time)/(p.y*p.y)+p.x)));
+	}
+
+    varying vec2 vUv;
+
+	void main(void)
+	{
+
+		float c = dot( vec3( fbm( vUv.y * 5.134 + time * 2.013 ),
+				             fbm( vUv.y * 15.002 + time * 3.591 ),
+							 fbm( vUv.y * 25.922 + time * 4.277 ) ),
+			   vec3( .85, .35, .17 ) );
+
+		c*=noise(gl_FragCoord.xy*time/300.0+304.0);
+		float scanline = sin(vUv.y*800.0)*0.1;
+		c -= scanline;		
+	  	
+		gl_FragColor = vec4( c, c, c, 1.);
+	}
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShader">
+	uniform sampler2D texture1;
+
+    varying vec2 vUv;
+
+    void main() {
+    	gl_FragColor = texture2D(texture1, vUv); // Displays Nothing
+    }
+</script>
+
+
+<script type="x-shader/x-vertex" id="fs_Composite">
+
+	varying vec2 vUv;
+	uniform sampler2D tBase;
+	uniform sampler2D tGlow;
+
+	void main() {
+
+		
+		//Screen: X = 1- ((255-U)*(255-L))/255
+		vec4 color = 1.0 - ( ( 1.0 - texture2D( tGlow, vUv ) ) * ( 1.0 - texture2D( tBase, vUv ) ) );
+
+		gl_FragColor = color;
+
+	}
+	
+</script>
+
+<script type="x-shader/x-vertex" id="fs_ZoomBlur">
+	
+	// Add center, strength, random yes/no, randomize
+	 
+	varying vec2 vUv;
+	uniform sampler2D tDiffuse;
+	uniform vec2 resolution;
+	uniform float strength;
+	uniform float multiplier;
+	uniform vec2 center;
+	
+	float random(vec3 scale,float seed)
+	{
+		return fract(sin(dot(gl_FragCoord.xyz+seed,scale))*43758.5453+seed);
+	}
+	
+	void main() {
+
+		vec4 color=vec4(0.0);
+		float total=0.0;
+
+		vec2 toCenter=(center-vUv)*resolution;
+		
+        // randomize the lookup values to hide the fixed number of samples
+		float offset=random(vec3(12.9898,78.233,151.7182),0.0);
+		
+		for(float t=0.0;t<=40.0;t++){
+
+			float percent=(t+offset)/40.0;
+			float weight=4.0*(percent-percent*percent);
+			
+			vec4 sample=texture2D(tDiffuse,vUv+toCenter*percent*strength/resolution)*multiplier;
+			
+			// switch to pre-multiplied alpha to correctly blur transparent images
+			sample.rgb*=sample.a;
+
+			color+=sample*weight;
+			total+=weight;
+		}
+		
+		gl_FragColor=color/total;
+		gl_FragColor.rgb/=gl_FragColor.a+0.00001;
+	}
+	
+	</script>
+
+<script>
+
+function deg2rad(deg) { return deg * Math.PI / 180; }
+
+		var audio, progressbar, time;
+		var timeline = new FRAME.Timeline();
+		var resourceManager = new THREE.ResourceManager();
+			
+		function load () {
+
+			progressbar = document.getElementById("progressbar");
+			resourceManager.loadResources( resources, init, onProgress );
+
+		}
+
+
+		function onProgress( perc ) {
+
+			progressbar.style.width = parseInt( perc * 100 ) + "%";
+
+		}
+
+		function init () {
+
+			initModules();
+
+			audio = document.createElement( 'audio' );
+			audio.src = 'files/sgz_tway.ogg';
+			audio.controls = true;
+			audio.style.position = 'absolute';
+			audio.style.left = 'calc(50% - 150px)';
+			audio.style.bottom = '25px';
+			audio.style.display = 'none';
+			audio.style.transition = 'opacity 1s';
+			document.body.appendChild( audio );
+
+			var timeoutID;
+
+			document.addEventListener( 'mousemove', function ( event ) {
+
+				audio.style.opacity = 0.5;
+				if ( timeoutID !== undefined ) {
+					clearTimeout( timeoutID );
+				}
+
+				timeoutID = setTimeout( function () {
+					audio.style.opacity = 0;
+				}, 1000 );
+			} );
+
+			var progress=document.getElementById("progressbarcontainer");
+			progress.style.display = "none";
+
+			var progress=document.getElementById("buttonstart");
+			progress.style.display = "block";
+			
+			progress.addEventListener('click', function(){
+				var info = document.getElementById( 'loadinglayer' );
+				info.style.display = 'none';
+				
+				document.getElementById("credits").style.visibility = "hidden";
+
+				start();
+			});
+
+		}
+
+		function showCredits() {
+
+			el = document.getElementById("credits");
+   			el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+		}		
+
+
+		function initModules () {
+
+			// console.log("finished loading");
+
+			var modules = {};
+
+			for ( var i = 0, l = json.timeline.length; i < l; i ++ ) {
+
+				var data = json.timeline[ i ];
+
+				var layer = data[ 0 ];
+				var start = data[ 1 ];
+				//!!! var duration = data[ 2 ];
+				var duration = data[ 2 ]-data[1];
+				var moduleName = data[ 3 ];
+				var parameters = data[ 4 ];
+				var id = data[ 5 ];
+
+				if ( window[ moduleName ] === undefined ) {
+					console.log( 'FRAME: Missing module: ' + moduleName );
+					continue;
+				}
+
+				var module;
+
+				module = new window[ moduleName ];
+				module.name = moduleName;
+
+				for ( var key in parameters ) {
+					if ( module.parameters.input[ key ] === undefined ) {
+						console.log( 'FRAME: [' + moduleName + '] doesn\'t support "' + key + '" as input parameter' );
+						delete parameters[ key ];
+						continue;
+					}
+				}
+				
+				if ( parameters.dom !== undefined ) {
+					parameters.dom = document.body;
+				}
+		
+				var element = new FRAME.TimelineElement( moduleName, layer, start, duration, module, parameters );
+				element.id = id;
+				timeline.add( element );
+			}
+		}
+
+		var animate = function () {
+
+			if ( audio.currentTime === audio.duration ) {
+				audio.style.display = 'none';
+				document.getElementById("credits").style.visibility = "visible";
+				
+				var info = document.getElementById( 'loadinglayer' );
+				info.style.display = '';
+				
+				return;
+			}
+			requestAnimationFrame( animate );
+			
+			timeline.update( audio.currentTime );
+
+		};
+
+		var start = function () {
+
+			audio.style.display = '';
+			
+			audio.volume=1;
+			audio.play();
+			animate();
+
+		};
+
+		</script>
+
+		<div id="loadinglayer" width="100%" height="100%" style="vertical-align:middle;display:table-cell;z-index:3">
+			<div id="progressbarcontainer">
+				<div id="progressbar"></div>
+			</div>
+
+			<div id="buttonstart" style="display:none">
+				<a id="start" href="#">this way</a>
+			</div>
+			<div style="position: absolute; left: 0px; bottom: 0px; width: 100%;z-index:100">
+				<div class="footer">
+			  		<ul class="first">
+					    <li><a class="bottomtext" href="#" onclick="showCredits()">Credits</a></li>
+			    		<li><a class="bottomtext" href="https://github.com/kile/thisway.js" target="_blank">Source code (Github)</a></li>
+			    		<li class="last"><span class="bottomtext">Share</span></li>
+			    	</ul>
+			    	<ul>
+			    		<li class="last icons"><a href="http://twitter.com/share?text=%22thisway.js%22%20a%20%23webgl%20remake%20of%20the%20Stravaganza%27s%20demo%20%22this%20way%22%20using%20%23threejs%20%2F%20%23demoscene" target="_blank"><img src="files/footer/twitter.png" alt="twitter" border="0"></a></li>
+				    	<li class="last icons"><a href="https://plus.google.com/share?url=http://kile.stravaganza.org/lab/thiswayjs" target="_blank"><img src="files/footer/gplus.png" alt="googleplus" border="0"></a></li>
+				    	<li class="last icons"><a href="http://www.facebook.com/sharer.php?u=http://kile.stravaganza.org/lab/thiswayjs" target="_blank"><img src="files/footer/facebook.png" alt="facebook" border="0"></a></li>
+			    		<li class="clear last">&nbsp;</li>
+			  		</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="credits">
+  			<div>
+					<h1>thisway.js</h1>
+					a html5 remake of <a href="http://www.stravaganza.org" target="_blank">stravaganza</a>'s <a href="http://en.wikipedia.org/wiki/Demo_(computer_programming)" target="_blank">demo</a> <a href="http://pouet.net/prod.php?which=7086" target="_blank">"this way"</a>
+					<br/><br/>
+					code and gfx: <a href="https://twitter.com/fernandojsg" target="_blank">kile</a><br />
+					additional shaders and gfx: <a href="https://twitter.com/reality3d" target="_blank">reality3d</a><br />
+					<br/>
+					<span style="font-weight:bold;padding-top:25px">ORIGINAL DEMO</span><br/>
+					code: <a href="http://ithaqua.stravaganza.org" target="_blank">ithaqua</a><br />
+					gfx: <a href="http://tekno.stravaganza.org" target="_blank">tekno</a><br />
+					music: <a href="http://wonder.stravaganza.org" target="_blank">wonder</a><br/>
+					<br/>
+					using <a href="http://www.mrdoob.com" target="_blank">mrdoob</a>'s <a href="http://threejs.org" target="_blank">three.js</a>
+					<br/><br/>
+					<a href="https://github.com/kile/thisway.js" target="_blank">source code</a><!--, <a href="http://www.youtube.com/watch?v=sW_fel34VK4" target="_blank">video</a>-->
+					<br/>
+					<span style="color:#555;margin-top:20px;font-size:10px">January 19 2014</span>
+  			</div>
+ 		</div>
+	</body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1752824-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

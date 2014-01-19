@@ -1,0 +1,167 @@
+#progressbarcontainer {
+	background-color: black;
+	padding: 3px;
+
+	background-color: #fff;
+	opacity: 0.4;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+
+#start {
+	padding:25px;
+	font-size:28px;
+	font-family: 'Exo 2', sans-serif;
+	color: #fff;
+	background-color:rgba(13,13,13,0.5);
+	/*background: none;*/
+	border: 1px solid #222;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+#start:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+
+#progressbar {
+   background-color: #000;
+   width: 0%; /* Adjust with JavaScript */
+   height: 20px;
+}
+
+.footer {
+	float: right;
+	margin: 20px 26px 0 0;
+	vertical-align: middle;
+}	
+.footer * {
+	margin: 0;
+	/*padding: 0; */
+	padding-bottom:20px;
+}
+
+.footer ul li.last, .footer ul li.last li {
+	border: none;
+	padding: 0 0 0 10px;
+	color: #999;
+}
+
+.footer ul.first
+{
+	padding-bottom: 12px;
+}
+
+
+
+ul {
+	display: inline-block;
+	list-style-type: disc;
+	padding: 0px;
+	margin:0px;
+}
+
+div.center
+{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+.footer ul li {
+	height: 16px;
+	border-right: 1px solid #a0a0a0;
+	padding: 0 10px 0 10px;
+	width: auto;
+	float: left;
+	line-height: 18px;
+	list-style: none;
+}
+
+#loadinglayer {
+	background: url("../files/loading/loading.png") center center no-repeat;
+	background-size: contain;
+	width: 100%; 
+	height: 100%;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+}
+
+body {
+	background-color: #000;
+	color: #888;
+	font-family: Helvetica;
+	line-height: 26px;
+	margin: 0px;
+	overflow: hidden;
+
+
+	font: 500 10px/18px "FuturaBT-Medium", Arial, sans-serif;
+	color: #434343;
+	letter-spacing: 1px;
+
+}
+
+h1 {
+	color: #fff;
+	margin: 8px;
+}
+
+#credits {
+	visibility: hidden;
+
+	padding-top:20px;
+	background-color:rgba(13,13,13,0.9);
+	border: 1px solid #444;
+	font-size:12px;
+	color:#777;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:50%;
+	text-align:center;
+
+	z-index: 15;
+	width: 360px;
+	height: 290px;
+	left: calc(50% - 180px);
+	top: calc(50% - 180px);
+	text-align: center;
+
+ }
+
+#buttonstart {
+	z-index: 5;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	left: calc(50% - 100px);
+	top: calc(50% + 180px);
+	text-align: center;
+}
+
+#progressbarcontainer {
+	z-index: 5;
+	position: absolute;
+	width: 400px;
+	left: calc(50% - 200px);
+	top: calc(50% + 180px);
+	text-align: center;
+}
+

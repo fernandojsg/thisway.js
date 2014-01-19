@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>kile</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: Win32;  Configuration: Release_Max2009_static</authoring_tool>
+      <source_data>file:///D:/@max/bien/cubes/cubefinal.max</source_data>
+    </contributor>
+    <created>2013-12-08T18:32:57</created>
+    <modified>2013-12-08T18:32:57</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="_0_-_Default">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.6980392 0.6980392 0.6980392 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.6980392 0.6980392 0.6980392 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_1_-_Defaultzxcv">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.3568628 0.3568628 0.3568628 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.3568628 0.3568628 0.3568628 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_1_-_Default">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.4666667 0.4666667 0.4666667 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.4666667 0.4666667 0.4666667 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_0_-_Defaulte">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.454902 0.454902 0.454902 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.454902 0.454902 0.454902 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_1_-_Defaulte">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.2588235 0.2588235 0.2588235 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.2588235 0.2588235 0.2588235 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_1_-_Defaultff">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.3882353 0.3882353 0.3882353 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.3882353 0.3882353 0.3882353 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_9_-_Default">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.8274511 0.8274511 0.8274511 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.8274511 0.8274511 0.8274511 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="_0_-_Default-material" name="_0_-_Default">
+      <instance_effect url="#_0_-_Default"/>
+    </material>
+    <material id="_1_-_Defaultzxcv-material" name="_1_-_Defaultzxcv">
+      <instance_effect url="#_1_-_Defaultzxcv"/>
+    </material>
+    <material id="_1_-_Default-material" name="_1_-_Default">
+      <instance_effect url="#_1_-_Default"/>
+    </material>
+    <material id="_0_-_Defaulte-material" name="_0_-_Defaulte">
+      <instance_effect url="#_0_-_Defaulte"/>
+    </material>
+    <material id="_1_-_Defaulte-material" name="_1_-_Defaulte">
+      <instance_effect url="#_1_-_Defaulte"/>
+    </material>
+    <material id="_1_-_Defaultff-material" name="_1_-_Defaultff">
+      <instance_effect url="#_1_-_Defaultff"/>
+    </material>
+    <material id="_9_-_Default-material" name="_9_-_Default">
+      <instance_effect url="#_9_-_Default"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Box01" name="Box01">
+      <mesh>
+        <source id="geom-Box01-positions">
+          <float_array id="geom-Box01-positions-array" count="24">-100 -100 0 100 -100 0 -100 100 0 100 100 0 -100 -100 200 100 -100 200 -100 100 200 100 100 200</float_array>
+          <technique_common>
+            <accessor source="#geom-Box01-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box01-normals">
+          <float_array id="geom-Box01-normals-array" count="72">0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box01-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box01-map1">
+          <float_array id="geom-Box01-map1-array" count="36">0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box01-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box01-map2">
+          <float_array id="geom-Box01-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box01-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box01-vertices">
+          <input semantic="POSITION" source="#geom-Box01-positions"/>
+        </vertices>
+        <triangles material="_0_-_Default_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box01-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box01-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box01-map2" offset="3" set="1"/>
+          <p>2 0 11 1 0 1 9 0 3 2 10 2 1 3 8 3 3 2 10 2 0 1 9 0 5 4 9 5 4 5 8 4 7 6 11 6 6 7 10 7 7 6 11 6 4 5 8 4 1 8 5 9 0 9 4 8 5 10 7 10 4 11 6 11 5 10 7 10 0 9 4 8 3 12 1 13 1 13 0 12 7 14 3 14 5 15 2 15 7 14 3 14 1 13 0 12 2 16 5 17 3 17 4 16 6 18 7 18 7 19 6 19 6 18 7 18 3 17 4 16 0 20 1 21 2 21 0 20 4 22 3 22 6 23 2 23 4 22 3 22 2 21 0 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box02" name="Box02">
+      <mesh>
+        <source id="geom-Box02-positions">
+          <float_array id="geom-Box02-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box02-normals">
+          <float_array id="geom-Box02-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box02-map1">
+          <float_array id="geom-Box02-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box02-map2">
+          <float_array id="geom-Box02-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box02-vertices">
+          <input semantic="POSITION" source="#geom-Box02-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaultzxcv_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box02-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box02-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box02-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box03" name="Box03">
+      <mesh>
+        <source id="geom-Box03-positions">
+          <float_array id="geom-Box03-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box03-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box03-normals">
+          <float_array id="geom-Box03-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box03-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box03-map1">
+          <float_array id="geom-Box03-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box03-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box03-vertices">
+          <input semantic="POSITION" source="#geom-Box03-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box03-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box03-map1" offset="2" set="0"/>
+          <p>0 0 0 2 1 1 3 2 2 3 2 2 1 3 3 0 0 0 4 4 4 5 5 5 7 6 6 7 6 6 6 7 7 4 4 4 0 8 8 1 9 9 5 10 10 5 10 10 4 11 11 0 8 8 1 12 12 3 13 13 7 14 14 7 14 14 5 15 15 1 12 12 3 16 16 2 17 17 6 18 18 6 18 18 7 19 19 3 16 16 2 20 20 0 21 21 4 22 22 4 22 22 6 23 23 2 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box04" name="Box04">
+      <mesh>
+        <source id="geom-Box04-positions">
+          <float_array id="geom-Box04-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box04-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box04-normals">
+          <float_array id="geom-Box04-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box04-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box04-map1">
+          <float_array id="geom-Box04-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box04-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box04-map2">
+          <float_array id="geom-Box04-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box04-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box04-vertices">
+          <input semantic="POSITION" source="#geom-Box04-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#geom-Box04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box04-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box04-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box04-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box05" name="Box05">
+      <mesh>
+        <source id="geom-Box05-positions">
+          <float_array id="geom-Box05-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box05-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box05-normals">
+          <float_array id="geom-Box05-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box05-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box05-map1">
+          <float_array id="geom-Box05-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box05-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box05-map2">
+          <float_array id="geom-Box05-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box05-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box05-vertices">
+          <input semantic="POSITION" source="#geom-Box05-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#geom-Box05-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box05-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box05-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box05-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box06" name="Box06">
+      <mesh>
+        <source id="geom-Box06-positions">
+          <float_array id="geom-Box06-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box06-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box06-normals">
+          <float_array id="geom-Box06-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box06-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box06-map1">
+          <float_array id="geom-Box06-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box06-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box06-map2">
+          <float_array id="geom-Box06-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box06-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box06-vertices">
+          <input semantic="POSITION" source="#geom-Box06-positions"/>
+        </vertices>
+        <triangles material="_0_-_Defaulte_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box06-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box06-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box06-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box06-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box07" name="Box07">
+      <mesh>
+        <source id="geom-Box07-positions">
+          <float_array id="geom-Box07-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box07-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box07-normals">
+          <float_array id="geom-Box07-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box07-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box07-map1">
+          <float_array id="geom-Box07-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box07-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box07-map2">
+          <float_array id="geom-Box07-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box07-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box07-vertices">
+          <input semantic="POSITION" source="#geom-Box07-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaulte_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box07-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box07-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box07-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box07-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box08" name="Box08">
+      <mesh>
+        <source id="geom-Box08-positions">
+          <float_array id="geom-Box08-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box08-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box08-normals">
+          <float_array id="geom-Box08-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box08-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box08-map1">
+          <float_array id="geom-Box08-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box08-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box08-map2">
+          <float_array id="geom-Box08-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box08-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box08-vertices">
+          <input semantic="POSITION" source="#geom-Box08-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaulte" count="12">
+          <input semantic="VERTEX" source="#geom-Box08-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box08-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box08-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box08-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box09" name="Box09">
+      <mesh>
+        <source id="geom-Box09-positions">
+          <float_array id="geom-Box09-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box09-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box09-normals">
+          <float_array id="geom-Box09-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box09-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box09-map1">
+          <float_array id="geom-Box09-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box09-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box09-map2">
+          <float_array id="geom-Box09-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box09-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box09-vertices">
+          <input semantic="POSITION" source="#geom-Box09-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaultff_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box09-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box09-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box09-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box09-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box10" name="Box10">
+      <mesh>
+        <source id="geom-Box10-positions">
+          <float_array id="geom-Box10-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box10-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box10-normals">
+          <float_array id="geom-Box10-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box10-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box10-map1">
+          <float_array id="geom-Box10-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box10-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box10-map2">
+          <float_array id="geom-Box10-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box10-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box10-vertices">
+          <input semantic="POSITION" source="#geom-Box10-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#geom-Box10-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box10-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box10-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box10-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box11" name="Box11">
+      <mesh>
+        <source id="geom-Box11-positions">
+          <float_array id="geom-Box11-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box11-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box11-normals">
+          <float_array id="geom-Box11-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box11-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box11-map1">
+          <float_array id="geom-Box11-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box11-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box11-map2">
+          <float_array id="geom-Box11-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box11-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box11-vertices">
+          <input semantic="POSITION" source="#geom-Box11-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaultzxcv" count="12">
+          <input semantic="VERTEX" source="#geom-Box11-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box11-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box11-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box11-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box12" name="Box12">
+      <mesh>
+        <source id="geom-Box12-positions">
+          <float_array id="geom-Box12-positions-array" count="24">-20 -20 0 20 -20 0 -20 20 0 20 20 0 -20 -20 40 20 -20 40 -20 20 40 20 20 40</float_array>
+          <technique_common>
+            <accessor source="#geom-Box12-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box12-normals">
+          <float_array id="geom-Box12-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box12-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box12-map1">
+          <float_array id="geom-Box12-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box12-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box12-vertices">
+          <input semantic="POSITION" source="#geom-Box12-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#geom-Box12-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box12-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box12-map1" offset="2" set="0"/>
+          <p>0 0 0 2 1 1 3 2 2 3 2 2 1 3 3 0 0 0 4 4 4 5 5 5 7 6 6 7 6 6 6 7 7 4 4 4 0 8 8 1 9 9 5 10 10 5 10 10 4 11 11 0 8 8 1 12 12 3 13 13 7 14 14 7 14 14 5 15 15 1 12 12 3 16 16 2 17 17 6 18 18 6 18 18 7 19 19 3 16 16 2 20 20 0 21 21 4 22 22 4 22 22 6 23 23 2 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box13" name="Box13">
+      <mesh>
+        <source id="geom-Box13-positions">
+          <float_array id="geom-Box13-positions-array" count="24">-20 -20 0 20 -20 0 -20 20 0 20 20 0 -20 -20 40 20 -20 40 -20 20 40 20 20 40</float_array>
+          <technique_common>
+            <accessor source="#geom-Box13-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box13-normals">
+          <float_array id="geom-Box13-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box13-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box13-map1">
+          <float_array id="geom-Box13-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box13-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box13-map2">
+          <float_array id="geom-Box13-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box13-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box13-vertices">
+          <input semantic="POSITION" source="#geom-Box13-positions"/>
+        </vertices>
+        <triangles material="_0_-_Defaulte" count="12">
+          <input semantic="VERTEX" source="#geom-Box13-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box13-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box13-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box13-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box14" name="Box14">
+      <mesh>
+        <source id="geom-Box14-positions">
+          <float_array id="geom-Box14-positions-array" count="24">-15 -15 0 15 -15 0 -15 15 0 15 15 0 -15 -15 30 15 -15 30 -15 15 30 15 15 30</float_array>
+          <technique_common>
+            <accessor source="#geom-Box14-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box14-normals">
+          <float_array id="geom-Box14-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box14-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box14-map1">
+          <float_array id="geom-Box14-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box14-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box14-map2">
+          <float_array id="geom-Box14-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box14-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box14-vertices">
+          <input semantic="POSITION" source="#geom-Box14-positions"/>
+        </vertices>
+        <triangles material="_1_-_Defaultff" count="12">
+          <input semantic="VERTEX" source="#geom-Box14-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box14-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box14-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box14-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box15" name="Box15">
+      <mesh>
+        <source id="geom-Box15-positions">
+          <float_array id="geom-Box15-positions-array" count="24">-10 -10 0 10 -10 0 -10 10 0 10 10 0 -10 -10 20 10 -10 20 -10 10 20 10 10 20</float_array>
+          <technique_common>
+            <accessor source="#geom-Box15-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box15-normals">
+          <float_array id="geom-Box15-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box15-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box15-map1">
+          <float_array id="geom-Box15-map1-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box15-map1-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box15-map2">
+          <float_array id="geom-Box15-map2-array" count="72">0.9944153 0.5 0 0.9949951 0.1706848 0 0.6656799 0.170105 0 0.6651001 0.4994202 0 0.6651001 0.4995422 0 0.664566 0.1702271 0 0.3352509 0.1707458 0 0.3357849 0.500061 0 0.6650238 0.5004272 0 0.3357086 0.500061 0 0.3353424 0.8293762 0 0.6646576 0.8297424 0 0.005935669 0.1698608 0 0.004989624 0.499176 0 0.3343048 0.5001221 0 0.3352509 0.1708069 0 0.3344421 0.5001221 0 0.005126953 0.5007935 0 0.00579834 0.8301086 0 0.3351135 0.8294373 0 0.9949799 0.5005341 0 0.6656647 0.5 0 0.6651154 0.8293152 0 0.9944305 0.8298645 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box15-map2-array" count="24" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box15-vertices">
+          <input semantic="POSITION" source="#geom-Box15-positions"/>
+        </vertices>
+        <triangles material="_9_-_Default_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box15-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box15-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box15-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Box15-map2" offset="3" set="1"/>
+          <p>0 0 0 0 2 1 1 1 3 2 2 2 3 2 2 2 1 3 3 3 0 0 0 0 4 4 4 4 5 5 5 5 7 6 6 6 7 6 6 6 6 7 7 7 4 4 4 4 0 8 8 8 1 9 9 9 5 10 10 10 5 10 10 10 4 11 11 11 0 8 8 8 1 12 12 12 3 13 13 13 7 14 14 14 7 14 14 14 5 15 15 15 1 12 12 12 3 16 16 16 2 17 17 17 6 18 18 18 6 18 18 18 7 19 19 19 3 16 16 16 2 20 20 20 0 21 21 21 4 22 22 22 4 22 22 22 6 23 23 23 2 20 20 20</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Box01" name="Box01">
+        <rotate>-1 0 0 -90</rotate>
+        <node>
+          <matrix>1 0 0 0 0 1 0 2.55795e-13 0 0 1 -99.99999 0 0 0 1</matrix>
+          <instance_geometry url="#geom-Box01">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_0_-_Default_1" target="#_0_-_Default-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box02" name="Box02">
+        <translate>-90 -25 20</translate>
+        <instance_geometry url="#geom-Box02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaultzxcv_1" target="#_1_-_Defaultzxcv-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box03" name="Box03">
+        <translate>-15 -90 -45</translate>
+        <instance_geometry url="#geom-Box03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default_1" target="#_1_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box04" name="Box04">
+        <translate>90 55 -65</translate>
+        <instance_geometry url="#geom-Box04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box05" name="Box05">
+        <translate>-45.72875 90 -5</translate>
+        <instance_geometry url="#geom-Box05">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box06" name="Box06">
+        <translate>85 -45 40</translate>
+        <instance_geometry url="#geom-Box06">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_0_-_Defaulte_1" target="#_0_-_Defaulte-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box07" name="Box07">
+        <translate>25 -40 -100</translate>
+        <instance_geometry url="#geom-Box07">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaulte_1" target="#_1_-_Defaulte-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box08" name="Box08">
+        <translate>-85 25 -25</translate>
+        <instance_geometry url="#geom-Box08">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaulte" target="#_1_-_Defaulte-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box09" name="Box09">
+        <translate>40 -85 -5</translate>
+        <instance_geometry url="#geom-Box09">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaultff_1" target="#_1_-_Defaultff-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box10" name="Box10">
+        <translate>35 85 25</translate>
+        <instance_geometry url="#geom-Box10">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box11" name="Box11">
+        <translate>60 35.00001 -100</translate>
+        <instance_geometry url="#geom-Box11">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaultzxcv" target="#_1_-_Defaultzxcv-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box12" name="Box12">
+        <translate>-80 -55 -60</translate>
+        <instance_geometry url="#geom-Box12">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box13" name="Box13">
+        <translate>80 -20 -65</translate>
+        <instance_geometry url="#geom-Box13">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_0_-_Defaulte" target="#_0_-_Defaulte-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box14" name="Box14">
+        <translate>-60 10.00001 -90</translate>
+        <instance_geometry url="#geom-Box14">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Defaultff" target="#_1_-_Defaultff-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box15" name="Box15">
+        <translate>90 60 50</translate>
+        <instance_geometry url="#geom-Box15">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_9_-_Default_1" target="#_9_-_Default-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
