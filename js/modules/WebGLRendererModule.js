@@ -22,7 +22,7 @@ var WebGLRendererModule = function () {
 		renderer.domElement.style.position = 'absolute';
 		renderer.domElement.style.left = '0px';
 		renderer.domElement.style.zIndex = '0';
-		renderer.domElement.style.top = ( ( window.innerHeight - renderer.domElement.height  ) / 2 ) + 'px';
+		renderer.domElement.style.top = ( ( window.innerHeight - ( renderer.domElement.height / renderer.devicePixelRatio ) ) / 2 ) + 'px';
 
 	};
 
@@ -31,8 +31,7 @@ var WebGLRendererModule = function () {
 		width = parameters.width;
 		height = parameters.height;
 
-		//renderer = new THREE.WebGLRenderer( { antialias: true, alpha: false } ); // TODO: Remove this nasty global
-		renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+		renderer = new THREE.WebGLRenderer( { antialias: true, alpha: false } );
 		
 		renderer.autoClear = false;
 
